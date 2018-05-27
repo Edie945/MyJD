@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.TitleActivity">
+
+    <com.example.hp.jd_dome.view.activity.MytitleActivity
+        android:id="@+id/mtl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="热搜"
+        android:textSize="20dp" />
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <com.example.hp.jd_dome.view.activity.XCFlowLayout
+            android:id="@+id/flowlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.example.hp.jd_dome.view.activity.XCFlowLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="历史记录"
+        android:textSize="20dp" />
+
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/bt"
+        android:layout_gravity="center_horizontal"
+        android:ems="15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="清空历史记录"/>
+
+</LinearLayout>

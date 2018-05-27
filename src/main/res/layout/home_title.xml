@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="70dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/sao"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@drawable/sao_hei"
+                android:layout_alignParentLeft="true"
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+            <TextView
+                android:text="扫啊扫"
+                android:layout_marginTop="5dp"
+                android:textSize="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sousuo"
+            android:layout_weight="8"
+            android:layout_width="0dp"
+            android:layout_margin="17dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@drawable/ssk_white"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:src="@drawable/a_4"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:layout_weight="8"
+                android:gravity="center_vertical"
+                android:text="360手机"
+                android:textSize="20sp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/root"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/hongbao"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/pack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/xiaoxi"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/msg_hei"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp" />
+                <TextView
+                    android:text="消息"
+                    android:textSize="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

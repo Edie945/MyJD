@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <com.stx.xhb.xbanner.XBanner
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/banner_1"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            app:AutoPlayTime="3000"
+            app:isShowIndicatorOnlyOne="true"
+            app:isShowNumberIndicator="true"
+            app:pageChangeDuration="800"
+            app:pointsContainerBackground="#44aaaaaa"
+            app:pointsPosition="RIGHT"
+            app:tipTextSize="12sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/sudoku_recy_view"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="20dp"
+            android:background="@drawable/yuanjiao"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="京东"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="#ED2829"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text="快报"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <ViewFlipper
+                android:id="@+id/view_flipper"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="6dp"
+                android:autoStart="true"
+                android:flipInterval="3000"
+                android:inAnimation="@anim/slide_in_bottom"
+                android:outAnimation="@anim/slide_out_top">
+
+                <LinearLayout
+                    android:id="@+id/tv_warning_content1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:text="推荐"
+                        android:textColor="#FF0000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ellipsize="middle"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="赋得古原草送别"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tv_warning_content2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:text="热门"
+                        android:textColor="#FF0000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="离离原上草,一岁一枯荣"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tv_warning_content3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:text="HOT"
+                        android:textColor="#FF0000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="野火烧不尽,春风吹又生"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tv_warning_content4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:text="推荐"
+                        android:textColor="#FF0000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="远芳侵古道,晴翠接荒城"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tv_warning_content5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:text="结尾"
+                        android:textColor="#FF0000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="又送王孙去,萋萋满别情"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </ViewFlipper>
+
+            <RelativeLayout
+                android:id="@+id/gengduo"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="|"
+                    android:layout_toLeftOf="@id/gg"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/gg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="更多"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/miaoshamk"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:background="#f00"
+                        android:gravity="center"
+                        android:text="16点场"
+                        android:textColor="#fff"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/zhijiao"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="00"
+                        android:textColor="#f00" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:text=":"
+                        android:textColor="#f00"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/home_content_down_text_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00"
+                        android:textColor="#f00" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:text=":"
+                        android:textColor="#f00"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/home_content_down_text_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00"
+                        android:textColor="#f00" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:background="#D3D3D3"
+            android:nestedScrollingEnabled="false"
+            android:id="@+id/recy_tuijian_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <com.example.hp.jd_dome.view.activity.MyHome_Title
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+    </com.example.hp.jd_dome.view.activity.MyHome_Title>
+</RelativeLayout>

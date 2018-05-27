@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_weight="10"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:layout_height="0dp">
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:button="@null"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:checked="true"
+            android:background="@drawable/selector_home"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:id="@+id/rb_type"
+            android:button="@null"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:background="@drawable/selector_type"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:id="@+id/rb_shopCart"
+            android:button="@null"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:background="@drawable/selector_shop"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:id="@+id/rb_mine"
+            android:button="@null"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:background="@drawable/selector_mine"
+            android:layout_height="match_parent" />
+    </RadioGroup>
+
+</LinearLayout>

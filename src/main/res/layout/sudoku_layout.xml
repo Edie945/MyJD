@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+
+
+    <ImageView
+        android:id="@+id/img_sudoku"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp" />
+    <TextView
+        android:id="@+id/text_sudoku"
+        android:text="京东超市"
+        android:textSize="12dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_below="@id/img_sudoku"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

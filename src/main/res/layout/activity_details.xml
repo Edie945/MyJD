@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.DetailsActivity">
+
+    <com.stx.xhb.xbanner.XBanner
+        android:id="@+id/xbanner"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        app:isAutoPlay="false"
+        app:isShowIndicatorOnlyOne="true"
+        app:isShowNumberIndicator="true"
+        app:pageChangeDuration="800"
+        app:tipTextColor="#000000"
+        app:pointsContainerBackground="#44aaaaaa"
+        app:pointsPosition="RIGHT"
+        app:tipTextSize="12sp" />
+
+    <LinearLayout
+        android:paddingTop="5dp"
+
+        android:layout_below="@+id/xbanner"
+        android:id="@+id/l"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:textColor="#000000"
+                android:id="@+id/title_derails"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/normalheart"
+                />
+            <TextView
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关注"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/l"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#FF0000"
+            android:id="@+id/subhead_derails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/price_derails"
+        android:text="￥8888"
+        android:textColor="#ff0000"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/gongyingshang"
+                android:layout_gravity="center"
+                android:background="@drawable/lingdang"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp" />
+            <TextView
+                android:text="供应商"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/dianpu"
+                android:text=""
+                android:background="@drawable/dianpu"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp" />
+            <TextView
+                android:text="店铺"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+        </LinearLayout>
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/gouwuche"
+            android:background="@drawable/abu"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_weight="2"
+            android:id="@+id/jiagou"
+            android:text="加入购物车"
+            android:background="#FEC015"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_weight="2"
+            android:id="@+id/goumai"
+            android:text="立即购买"
+            android:background="#FE0002"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</RelativeLayout>

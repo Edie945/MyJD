@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="15dp"
+    android:layout_width="match_parent" android:layout_height="150dp">
+
+    <ImageView
+        android:id="@+id/img_miaosha"
+        android:src="@mipmap/ic_launcher"
+        android:layout_margin="15dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+    <TextView
+        android:id="@+id/title_miaosha"
+        android:layout_toRightOf="@id/img_miaosha"
+        android:layout_marginTop="15dp"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:text="【夏季特賣】  AEMAPE短袖 T恤 男裝新品商務休閒純色純棉 T恤 白色 180/XL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/bargainPrice_miaosha"
+        android:text="￥7999"
+        android:layout_toRightOf="@id/img_miaosha"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/price_miaosha"
+        android:text="￥3999"
+        android:textColor="#FF0000"
+        android:textSize="24dp"
+        android:layout_above="@id/bargainPrice_miaosha"
+        android:layout_toRightOf="@id/img_miaosha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/text_miaosha"
+        android:text="立即抢购"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:background="#FF0000"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

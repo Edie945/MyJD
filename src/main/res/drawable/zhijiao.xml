@@ -1,0 +1,10 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <!-- 填充颜色 -->
+    <solid android:color="#FFFFFF" ></solid>
+
+    <!-- 显示一条实线，线的宽度为 width，颜色为 color -->
+    <stroke android:width="2dp" android:color="#FF0000"></stroke>
+
+</shape>
